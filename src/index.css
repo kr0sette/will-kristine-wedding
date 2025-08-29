@@ -17,7 +17,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: oklch(0.9613 0.0111 89.72);
+  /*--background: oklch(1,0,0);*/
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -65,10 +66,21 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-size: 18px;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 1.2em;
   line-height: 1.1;
 }
 
