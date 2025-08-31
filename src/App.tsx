@@ -1,19 +1,13 @@
-import { useState } from 'react'
-import './App.css'
-import SaveTheDate from '@/page/save-the-date'
-import Navigation from '@/components/ui/navigation'
+import Navigation from '@/components/custom/navigation'
+import { Outlet } from 'react-router'
 
 function App() {
-  const [_count, _setCount] = useState(0)
 
   return (
-    <>
+    <div className="app-container h-screen w-screen">
       <Navigation />
-      <div className="app-container flex flex-col items-center justify-center h-screen">
-        <SaveTheDate />
-      </div>
-    </>
-
+      <Outlet />
+    </div>
   )
 }
 
