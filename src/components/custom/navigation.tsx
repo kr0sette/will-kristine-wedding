@@ -55,8 +55,8 @@ function Navigation() {
         </NavigationMenu>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-                <Button variant="outline" size="icon" className="mobile-menu-button bg-white rounded-full sm:hidden">
-                    <MenuIcon />
+                <Button variant="outline" size="icon" className="mobile-menu-button bg-white rounded-full size-[50px] sm:hidden">
+                    <MenuIcon className="size-[25px]" />
                 </Button>
             </SheetTrigger>
             <SheetContent className="mobile-menu-sheet-content bg-white p-[30px]"> 
