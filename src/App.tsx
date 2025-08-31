@@ -4,7 +4,7 @@ import { Outlet } from 'react-router'
 function App() {
 
   return (
-    <div className="app-container h-screen w-screen">
+    <div className="app-container h-fit w-fit">
       <Navigation />
       <Outlet />
     </div>
