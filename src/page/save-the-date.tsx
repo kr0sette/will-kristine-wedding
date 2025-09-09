@@ -4,7 +4,7 @@ function SaveTheDate() {
   return (
     <div className="save-the-date-content flex flex-col items-center justify-center pb-15">
       <h1 className="font-bold">Will & Kristine</h1>
-      <img src={gingko} alt="logo" className="w-1/3 pt-10 pb-10"/>
+      <img src={gingko} alt="gingko" className="w-3/4 sm:w-1/4 pt-10 pb-10"/>
       <div>
         
       </div>

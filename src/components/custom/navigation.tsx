@@ -2,7 +2,6 @@ import { useState } from 'react';
 import {
     NavigationMenu,
     NavigationMenuItem,
-    NavigationMenuLink,
     NavigationMenuList,
   } from "@/components/ui/navigation-menu"
 import { Separator } from "@/components/ui/separator"
@@ -19,13 +18,26 @@ function Navigation() {
         setIsOpen(false);
     };
 
+    const activeLinkStyle = ({isActive}: {isActive: boolean}) => {
+        const styles = [
+            "ml-5px",
+            "mr-5px",
+            "hover:underline"
+        ]
+        
+        if (isActive) {
+            styles.push("font-bold") ;
+        }
+
+        const classes = styles.join(" ");
+        return classes
+    }
+
     const renderNavItems = () => {
         return navItems.map(({value, label, to}: {value: string,label: string, to: string}, index: number) => (
             <>
-                <NavigationMenuItem key={value} className="desktop-menu-item">
-                    <NavigationMenuLink asChild className="text-sm text-center sm:text-lg">
-                        <NavLink to={to}>{label}</NavLink>
-                    </NavigationMenuLink>
+                <NavigationMenuItem key={value} className="desktop-menu-item text-center ml-2 mr-2">
+                    <NavLink to={to} className={ activeLinkStyle } >{label}</NavLink>
                 </NavigationMenuItem>
                 { index !== navItems.length - 1 && <Separator orientation="vertical"/> }
             </>
@@ -34,7 +46,7 @@ function Navigation() {
 
     const renderMobileNavItems = () => {
         return navItems.map(({ value, label, to }: { value: string,label: string, to: string }) => (
-            <li key={value} className="mobile-menu-option active:bg-gray-100 text-2xl">
+            <li key={value} className="mobile-menu-option active:font-bold text-2xl">
                 <NavLink to={to} onClick={ handleLinkClick }>{ label }</NavLink>
             </li>
         ))
