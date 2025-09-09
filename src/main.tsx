@@ -6,10 +6,11 @@ import App from './App.tsx'
 import navItems from '@/constants/navitems'
 import SaveTheDate from '@/page/save-the-date'
 import ComingSoon from '@/page/coming-soon'
+import AboutUs from '@/page/about-us'
 
 const routeElements: { [key: string]: React.ReactElement } = {
   home: <SaveTheDate />,
-  about: <ComingSoon />,
+  about: <AboutUs />,
   rsvp: <ComingSoon />,
   faqs: <ComingSoon />,
   schedule: <ComingSoon />,
