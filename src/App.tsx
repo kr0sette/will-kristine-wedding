@@ -6,7 +6,11 @@ function App() {
   return (
     <div className="app-container h-fit w-screen">
       <Navigation />
-      <Outlet />
+      <div className="flex flex-col items-center justify-center pb-15">
+        <div className="max-w-[704px]">
+          <Outlet />
+        </div>
+      </div>
     </div>
   )
 }
