@@ -26,7 +26,8 @@ function Navigation() {
         ]
         
         if (isActive) {
-            styles.push("font-bold") ;
+            styles.push("font-bold")
+            styles.push("text-(--accent)") ;
         }
 
         const classes = styles.join(" ");
@@ -46,7 +47,7 @@ function Navigation() {
 
     const renderMobileNavItems = () => {
         return navItems.map(({ value, label, to }: { value: string,label: string, to: string }) => (
-            <li key={value} className="mobile-menu-option active:font-bold text-2xl">
+            <li key={value} className="mobile-menu-option active:font-bold active:text-(--accent) text-2xl">
                 <NavLink to={to} onClick={ handleLinkClick }>{ label }</NavLink>
             </li>
         ))
