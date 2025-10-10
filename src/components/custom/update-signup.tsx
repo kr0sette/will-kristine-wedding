@@ -4,12 +4,12 @@ import { Label } from "@/components/ui/label"
 import { useState } from "react";
 import { useForm } from "react-hook-form"
 import { addEmailUpdatesGuest } from "@/firebase/services/firestore.service";
+interface emailUpdateFormData {
+    name: string
+    email: string
+}
 
 function UpdateSignup() {
-    interface emailUpdateFormData {
-        name: string
-        email: string
-    }
 
     const { 
         register, 

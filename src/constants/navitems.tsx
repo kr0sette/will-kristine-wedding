@@ -21,7 +21,7 @@ export default [
         to: '/faqs'
     },
     {
-        label: 'Schedule of Events',
+        label: 'Schedule',
         value: 'schedule',
         to: '/schedule'
     },
