@@ -40,7 +40,7 @@ function Navigation() {
                 <NavigationMenuItem key={value} className="desktop-menu-item text-center ml-2 mr-2">
                     <NavLink to={to} className={ activeLinkStyle } >{label}</NavLink>
                 </NavigationMenuItem>
-                { index !== navItems.length - 1 && <Separator orientation="vertical"/> }
+                { index !== navItems.length - 1 && <Separator className="bg-(--accent)/25" orientation="vertical"/> }
             </>
         ))
     }
@@ -68,11 +68,11 @@ function Navigation() {
         </NavigationMenu>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-                <Button variant="outline" size="icon" className="mobile-menu-button bg-white rounded-full size-[50px] sm:hidden">
+                <Button variant="outline" size="icon" className="mobile-menu-button bg-white/70 rounded-full size-[50px] sm:hidden">
                     <MenuIcon className="size-[25px]" />
                 </Button>
             </SheetTrigger>
-            <SheetContent className="mobile-menu-sheet-content bg-white p-[30px]"> 
+            <SheetContent className="mobile-menu-sheet-content bg-white/95 p-[30px]"> 
                 <ul className="mobile-menu-options-list flex flex-col gap-4">
                     { renderMobileNavItems() }
                 </ul>

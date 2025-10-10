@@ -7,13 +7,14 @@ import navItems from '@/constants/navitems'
 import SaveTheDate from '@/page/save-the-date'
 import ComingSoon from '@/page/coming-soon'
 import AboutUs from '@/page/about-us'
+import Schedule from '@/page/schedule'
 
 const routeElements: { [key: string]: React.ReactElement } = {
   home: <SaveTheDate />,
   about: <AboutUs />,
   rsvp: <ComingSoon />,
   faqs: <ComingSoon />,
-  schedule: <ComingSoon />,
+  schedule: <Schedule />,
   travel: <ComingSoon />,
   registry: <ComingSoon />
 }
