@@ -4,7 +4,7 @@
 /* @custom-variant dark (&:is(.dark *)); */
 
 :root {
-  font-family: "Courier Prime", Courier, Helvetica, Arial, sans-serif;
+  font-family: "Taviraj", Helvetica, Arial, sans-serif;
   color: oklch(0.3209 0 0);
   line-height: 1.5;
   font-weight: 400;
@@ -17,8 +17,7 @@
   -moz-osx-font-smoothing: grayscale;
   --radius: 0.625rem;
   /* --background: oklch(0.9613 0.0111 89.72); */
-  --background: oklch(0.8645 0.0325 82.76);
-  --background: oklch(0.8451 0.017 91.57);
+  --background: oklch(0.9605 0.0108 95.16);
   --foreground: oklch(0.2274 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -50,30 +49,6 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-}
-
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-  font-size: 18px;
-}
-
-h1 {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 3em;
-  line-height: 1.1;
-}
-
-h2 {
-  font-size: 2em;
-  line-height: 1.1;
-}
-
-h3 {
-  font-size: 1.2em;
-  color: var(--accent);
-  line-height: 1.1;
 }
 
 @theme inline {
@@ -152,7 +127,39 @@ h3 {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--background);
+    color: var(--foreground);
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    font-size: 18px;
+  }
+  
+  h1 {
+    font-family: "Taviraj", Helvetica, Arial, sans-serif;
+    color: var(--accent);
+    font-size: 3em;
+    line-height: 1.1;
+  }
+  
+  h2 {
+    font-size: 2em;
+    line-height: 1.1;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    color: var(--accent);
+    line-height: 1.1;
+  }
+  
+  a {
+    color: var(--accent);
+    font-weight: 600;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
