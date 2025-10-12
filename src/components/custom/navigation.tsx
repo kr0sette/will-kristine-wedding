@@ -22,11 +22,15 @@ function Navigation() {
         const styles = [
             "ml-5px",
             "mr-5px",
-            "hover:underline"
+            "hover:underline",
+            "text-(--foreground)",
+            "font-normal"
         ]
         
         if (isActive) {
-            styles.push("font-bold")
+            const textColorIndex= styles.indexOf("text-(--foreground)");
+            styles.splice(textColorIndex, 1);
+            styles.push("font-semibold");
             styles.push("text-(--accent)") ;
         }
 
@@ -34,20 +38,22 @@ function Navigation() {
         return classes
     }
 
+    const visibleItems = navItems.filter(item => item.visible);
+
     const renderNavItems = () => {
-        return navItems.map(({value, label, to}: {value: string,label: string, to: string}, index: number) => (
+        return visibleItems.map(({value, label, to}: {value: string,label: string, to: string}, index: number) => (
             <>
                 <NavigationMenuItem key={value} className="desktop-menu-item text-center ml-2 mr-2">
                     <NavLink to={to} className={ activeLinkStyle } >{label}</NavLink>
                 </NavigationMenuItem>
-                { index !== navItems.length - 1 && <Separator className="bg-(--accent)/25" orientation="vertical"/> }
+                { index !== visibleItems.length - 1 && <Separator className="bg-(--accent)/25" orientation="vertical"/> }
             </>
         ))
     }
 
     const renderMobileNavItems = () => {
-        return navItems.map(({ value, label, to }: { value: string,label: string, to: string }) => (
-            <li key={value} className="mobile-menu-option active:font-bold active:text-(--accent) text-2xl">
+        return visibleItems.map(({ value, label, to }: { value: string,label: string, to: string }) => (
+            <li key={value} className="mobile-menu-option font-normal active:font-semiboldactive:text-(--accent) text-2xl">
                 <NavLink to={to} onClick={ handleLinkClick }>{ label }</NavLink>
             </li>
         ))
@@ -59,7 +65,7 @@ function Navigation() {
     <div className="
     navigation-container 
     flex flex-row pt-2 pb-2 pr-2 justify-end
-    sm:justify-center sm:pt-5 sm:pb-5
+    sm:justify-center sm:pt-5 sm:pb-10
     ">
         <NavigationMenu className="navigation-menu hidden sm:block">
             <NavigationMenuList>

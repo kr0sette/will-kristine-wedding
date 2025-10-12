@@ -8,6 +8,7 @@ import SaveTheDate from '@/page/save-the-date'
 import ComingSoon from '@/page/coming-soon'
 import AboutUs from '@/page/about-us'
 import Schedule from '@/page/schedule'
+import Travel from '@/page/travel'
 
 const routeElements: { [key: string]: React.ReactElement } = {
   home: <SaveTheDate />,
@@ -15,7 +16,7 @@ const routeElements: { [key: string]: React.ReactElement } = {
   rsvp: <ComingSoon />,
   faqs: <ComingSoon />,
   schedule: <Schedule />,
-  travel: <ComingSoon />,
+  travel: <Travel />,
   registry: <ComingSoon />
 }
 

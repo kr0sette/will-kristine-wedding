@@ -25,9 +25,9 @@ export const eventSchedule = [
         date: "Wednesday, June 17, 2026",
         activities: [
             {
-                name: "Wedding Ceremony",
+                name: "Wedding Ceremony & Reception",
                 time: "TBD",
-                description: "Woooooo!"
+                description: "Exact times to be determined"
             }
         ]
     },
