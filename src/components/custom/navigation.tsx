@@ -9,6 +9,7 @@ import { NavLink } from 'react-router'
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetTrigger, SheetContent} from "@/components/ui/sheet"
 import { Menu as MenuIcon } from "lucide-react"
+import { Fragment } from 'react'
 import navItems from '@/constants/navitems'
 
 
@@ -18,23 +19,20 @@ function Navigation() {
         setIsOpen(false);
     };
 
-    const activeLinkStyle = ({isActive}: {isActive: boolean}) => {
+    const activeLinkStyle = (isMobile: boolean) => ({isActive}: {isActive: boolean}) => {
         const styles = [
             "ml-5px",
             "mr-5px",
             "hover:underline",
-            "text-(--foreground)",
-            "font-normal"
+            "text-(--lunar-green)",
+            isMobile ? "text-2xl" : "font-normal"
         ]
         
         if (isActive) {
-            const textColorIndex= styles.indexOf("text-(--foreground)");
-            styles.splice(textColorIndex, 1);
-            styles.push("font-semibold");
-            styles.push("text-(--accent)") ;
+            styles.push("font-black!");
         }
 
-        const classes = styles.join(" ");
+        const classes = styles.join(" ")
         return classes
     }
 
@@ -42,19 +40,19 @@ function Navigation() {
 
     const renderNavItems = () => {
         return visibleItems.map(({value, label, to}: {value: string,label: string, to: string}, index: number) => (
-            <>
+            <Fragment key={value}>
                 <NavigationMenuItem key={value} className="desktop-menu-item text-center ml-2 mr-2">
-                    <NavLink to={to} className={ activeLinkStyle } >{label}</NavLink>
+                    <NavLink to={to} className={ activeLinkStyle(false) }>{ label }</NavLink>
                 </NavigationMenuItem>
-                { index !== visibleItems.length - 1 && <Separator className="bg-(--accent)/25" orientation="vertical"/> }
-            </>
+                { index !== visibleItems.length - 1 && <Separator className="bg-(--grey-chateau)/40" orientation="vertical"/> }
+            </Fragment>
         ))
     }
 
     const renderMobileNavItems = () => {
         return visibleItems.map(({ value, label, to }: { value: string,label: string, to: string }) => (
-            <li key={value} className="mobile-menu-option font-normal active:font-semiboldactive:text-(--accent) text-2xl">
-                <NavLink to={to} onClick={ handleLinkClick }>{ label }</NavLink>
+            <li key={value} className="mobile-menu-option">
+                <NavLink to={to} onClick={ handleLinkClick } className={ activeLinkStyle(true) }>{ label }</NavLink>
             </li>
         ))
     }
@@ -62,11 +60,10 @@ function Navigation() {
 
 
   return (
-    <div className="
-    navigation-container 
+    <div id="navigation-container" className="sticky top-0 z-50 
+    bg-transparent sm:bg-(--background)
     flex flex-row pt-2 pb-2 pr-2 justify-end
-    sm:justify-center sm:pt-5 sm:pb-10
-    ">
+    sm:justify-center sm:pt-5 sm:pb-5">
         <NavigationMenu className="navigation-menu hidden sm:block">
             <NavigationMenuList>
                 { renderNavItems() }
@@ -78,7 +75,7 @@ function Navigation() {
                     <MenuIcon className="size-[25px]" />
                 </Button>
             </SheetTrigger>
-            <SheetContent className="mobile-menu-sheet-content bg-white/95 p-[30px]"> 
+            <SheetContent className="mobile-menu-sheet-content bg-white/90 p-[30px]"> 
                 <ul className="mobile-menu-options-list flex flex-col gap-4">
                     { renderMobileNavItems() }
                 </ul>

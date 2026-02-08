@@ -1,6 +1,6 @@
 export default [
     {
-        label: 'Save the Date',
+        label: 'Home',
         value: 'home',
         to: '/',
         index: true,
@@ -10,19 +10,7 @@ export default [
         label: 'About Us',
         value: 'about',
         to: '/about',
-        visible: false
-    },
-    {
-        label: 'RSVP',
-        value: 'rsvp',
-        to: '/rsvp',
-        visible: false
-    },
-    {
-        label: 'FAQs',
-        value: 'faqs',
-        to: '/faqs',
-        visible: false
+        visible: true
     },
     {
         label: 'Schedule',
@@ -37,9 +25,27 @@ export default [
         visible: true
     },
     {
+        label: 'FAQs',
+        value: 'faqs',
+        to: '/faqs',
+        visible: true
+    },
+    {
+        label: 'Coming Soon',
+        value: 'comingSoon',
+        to: '/coming-soon',
+        visible: true
+    },
+    {
         label: 'Registry',
         value: 'registry',
         to: '/registry',
         visible: false
+    },
+    {
+        label: 'RSVP',
+        value: 'rsvp',
+        to: '/rsvp',
+        visible: true
     },
 ]
