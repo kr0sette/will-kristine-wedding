@@ -23,7 +23,7 @@ function Rsvp() {
             </div>
             <div className="rsvp-content text-center w-full sm:w-[70%] mb-5">
                 <p className="mb-5">We cannot wait to spend the week with you all!</p>
-                <p className="mb-5">Kindly RSVP by <strong>April 15, 2026</strong>.</p>
+                <p className="mb-5">Kindly RSVP by <strong>May 1, 2026</strong>.</p>
                 <Mail className="size-10 ml-auto mr-auto mb-5 animate-bounce" />
                 <p className="mb-5">RSVP is online only.  Please respond even if you do not plan to attend.  This will help us with our planning.</p>
                 <p className="mb-5">RSVP forms are editable after submission so you can update your responses if needed.</p>

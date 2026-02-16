@@ -8,7 +8,7 @@ export const faqItems: FAQItem[] = [
   {
     question: "When and how should I RSVP?",
     response: [
-      "Kindly RSVP by April 15, 2026.  Go to the RSVP section of this site and click the appropraite button (if you are an on-site or off-site guest).   RSVPs are online only.  There is no mail-in form."
+      "Kindly RSVP by May 1, 2026.  Go to the RSVP section of this site and click the appropraite button (if you are an on-site or off-site guest).   RSVPs are online only.  There is no mail-in form."
     ],
     value: "rsvp"
   },
