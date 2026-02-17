@@ -56,7 +56,7 @@ export const faqItems: FAQItem[] = [
   {
     question: "Do I need to rent a car?",
     response: [
-      "You do not need to rent a car to get to the venue or airport.  However, we are an hour away from Asheville, NC (the nearest city) and you may want to schedule your Uber or Lyft in advance if you trying to catch a flight.  Renting a car will give you more freedom and flexibility to explore the area and leave when you choose.",
+      "You do not need to rent a car to get to the venue or airport.  However, we are an hour away from Asheville, NC (the nearest city) and you may want to schedule your Uber or Lyft in advance if you are trying to catch a flight.  Renting a car will give you more freedom and flexibility to explore the area and leave when you choose.",
       "If you would like to organize a carpool with other guests, please let us know.  We can help you arrange it!"
     ],
     value: "car-rental"
