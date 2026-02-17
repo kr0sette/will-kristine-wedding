@@ -17,7 +17,7 @@ function Home() {
           <h2 className="event-date mb-5 font-semibold">June 17, 2026</h2>
           <h3 className="venue-name mb-5">Mount Mitchell Eco Retreat</h3>
           <h3 className="event-location mb-5">Burnsville, NC</h3>
-          <p className="italic">Last updated February 8, 2026</p>
+          <p className="italic">Last updated February 16, 2026</p>
         </div>
         <Separator className="max-w-[50%] md:max-w-[25%] sm:max-w-[25%] bg-(--grey-chateau)/80 ml-auto mr-auto my-5 mt-50 preFadeIn"/>
         <div className="event-description text-center mt-30 w-full sm:w-[50%] mb-30 preFadeIn">

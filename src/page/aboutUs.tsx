@@ -27,7 +27,7 @@ function AboutUs() {
                         <ul>
                             <li>Will (or William)</li>
                             <li>Medical Student</li>
-                            <li>Former Wrestling Coach</li>
+                            <li>Loves tools, design, & anything handcrafted</li>
                             <li>Spirit Animal - Bear</li>
                         </ul>
                     </div>
@@ -41,7 +41,7 @@ function AboutUs() {
                         <ul>
                             <li>Kristine (sometimes Honey)</li>
                             <li>Software Engineer</li>
-                            <li>Average at tennis</li>
+                            <li>Late bloomer tennis player & big reader</li>
                             <li>Spirit Animal - Otter</li>
                         </ul>
                     </div>
@@ -56,14 +56,14 @@ function AboutUs() {
             </div>
             <div className="about-us-content-mobile sm:hidden flex flex-col items-center pt-5 mb-10 preFadeIn">
                 <div className="about-us-img-wrapper w-[80%] mb-5 preFadeIn">
-                    <img src={flowers} alt="flowers" className="sepia-25 rounded-[50%] drop-shadow-lg"/>
+                    <img src={flowers} alt="flowers" className="opacity-90 rounded-[50%] drop-shadow-lg sepia-25"/>
                 </div>
                 <div className="groom-desc-mobile text-center mb-5 preFadeIn">
                     <h2 className="font-bold">The Groom</h2>
                     <ul>
-                        <li>Will (not Bill)</li>
+                        <li>Will (or William)</li>
                         <li>Medical Student</li>
-                        <li>Former Wrestling Coach</li>
+                        <li>Loves tools, design, & anything handcrafted</li>
                         <li>Spirit Animal - Bear</li>
                     </ul>
                 </div>
@@ -74,7 +74,7 @@ function AboutUs() {
                     <ul>
                         <li>Kristine (sometimes Honey)</li>
                         <li>Software Engineer</li>
-                        <li>Average at tennis</li>
+                        <li>Late bloomer tennis player & big reader</li>
                         <li>Spirit Animal - Otter</li>
                     </ul>
                 </div>
