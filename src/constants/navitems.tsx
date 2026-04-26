@@ -31,16 +31,16 @@ export default [
         visible: true
     },
     {
+        label: 'Registry',
+        value: 'registry',
+        to: '/registry',
+        visible: true
+    },
+    {
         label: 'Coming Soon',
         value: 'comingSoon',
         to: '/coming-soon',
         visible: true
-    },
-    {
-        label: 'Registry',
-        value: 'registry',
-        to: '/registry',
-        visible: false
     },
     {
         label: 'RSVP',
