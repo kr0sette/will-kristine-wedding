@@ -9,9 +9,9 @@ export const eventSchedule = [
                 description: "For guests staying on-site."
             },
             {
-                name: "Welcome Dinner",
-                time: "6:30 PM",
-                description: "Attire casual."
+                name: "Landing Party",
+                time: "6:00 PM",
+                description: "Kick back, grab a bite, and say hello to the bride & groom. No agenda, just good food and good company. Catered by Pig & Grits. Attire casual. All guests welcome."
             }
         ]
     },
@@ -21,8 +21,13 @@ export const eventSchedule = [
         activities: [
             {
                 name: "Breakfast",
-                time: "8:00 - 11:00 AM",
-                description: "Breakfast is serve yourself.  There will be items in the communal kitchen for you to prepare at any time."
+                time: "8:00 - 10:00 AM",
+                description: "Breakfast is serve yourself. There will be items in the communal kitchen for you to prepare at any time."
+            },
+            {
+                name: "Lunch",
+                time: "12:00 - 2:00 PM",
+                description: "Catered by 67 Biltmore. Come and go as you please. All guests welcome."
             },
             {
                 name: "Rehearsal",
@@ -30,9 +35,9 @@ export const eventSchedule = [
                 description: "Attendance is required for those in wedding ceremony."
             },
             {
-                name: "Rehearsal Dinner",
+                name: "Almost Married Party",
                 time: "6:00 PM",
-                description: "Attire dressy casual. All guests welcome."
+                description: "Join us evening of games and food, combining a wedding shower and rehearsal dinner all in one night. Catered by Master BBQ USA (Filipino food). Attire casual. All guests welcome."
             }
         ]
     },
@@ -42,8 +47,13 @@ export const eventSchedule = [
         activities: [
             {
                 name: "Breakfast",
-                time: "8:00 - 11:00 AM",
-                description: "Breakfast is serve yourself.  There will be items in the communal kitchen for you to prepare at any time."
+                time: "8:00 - 10:00 AM",
+                description: "Breakfast is serve yourself. There will be items in the communal kitchen for you to prepare at any time."
+            },
+            {
+                name: "Lunch",
+                time: "12:00 PM - 2:00 PM",
+                description: "Catered by Pig & Grits. Come and go as you please. All guests welcome."
             },
             {
                 name: "Ceremony",
@@ -58,7 +68,7 @@ export const eventSchedule = [
             {
                 name: "After Party",
                 time: "10:30 PM",
-                description: "All guests welcome. Attire casual (bring a change of clothes). Come hang out by the fire pits with us after the reception!"
+                description: "All guests welcome. Attire casual (bring a change of clothes). Come hang out by the fire pits with us after the reception."
             }
         ]
     },
@@ -67,14 +77,14 @@ export const eventSchedule = [
         date: "Thursday, June 18, 2026",
         activities: [
             {
-                name: "Brunch",
-                time: "9:30 - 11:00 AM",
-                description: "Attire casual. All guests welcome."
+                name: "Post-Wedding Brunch",
+                time: "9:30 - 11:30 AM",
+                description: "Catered by Biscuithead. Come and go as you please. Attire casual. All guests welcome."
             },
             {
-                name: "Goodbye Dinner",
+                name: "Until Next Time Party",
                 time: "6:00 PM",
-                description: "Attire casual.  All guests welcome."
+                description: "One last night before we all go our separate ways. Come eat, laugh, and enjoy the grounds together. Catered by Baba Nahm. Attire casual. All guests welcome."
             }
         ]
     },
