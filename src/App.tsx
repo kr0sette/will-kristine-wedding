@@ -4,6 +4,7 @@ import AboutUs from '@/page/aboutUs'
 import Schedule from '@/page/schedule'
 import Travel from '@/page/travel'
 import Faqs from '@/page/faqs'
+import Registry from '@/page/registry'
 import ComingSoon from '@/page/coming-soon'
 import Rsvp from '@/page/rsvp'
 import { useEffect } from 'react'
@@ -78,6 +79,7 @@ function App() {
         <Schedule />
         <Travel />
         <Faqs />
+        <Registry />
         <ComingSoon />
         <Rsvp />
       </main>

@@ -9,7 +9,6 @@ function ComingSoon() {
         <p className="mb-5">Please check back to get more info on the following topics:</p>
         <h3 className="mb-5">Things to Do</h3>
         <h3 className="mb-5">What to pack</h3>
-        <h3 className="mb-5">Gift Registry</h3>
         <h3 className="mb-5">Details about on-site accomodations</h3>
       </div>
     </div>
